@@ -1,0 +1,449 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F69A9312-82A0-40B8-9F7D-E73F95D0B09C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TravelFar</RootNamespace>
+    <AssemblyName>TravelFar</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="UserTemplate\css\animate.min.css" />
+    <Content Include="UserTemplate\css\bootstrap.css" />
+    <Content Include="UserTemplate\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="UserTemplate\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="UserTemplate\css\bootstrap\bootstrap.css" />
+    <Content Include="UserTemplate\css\font-awesome.min.css" />
+    <Content Include="UserTemplate\css\jquery-ui.css" />
+    <Content Include="UserTemplate\css\linearicons.css" />
+    <Content Include="UserTemplate\css\magnific-popup.css" />
+    <Content Include="UserTemplate\css\main.css" />
+    <Content Include="UserTemplate\css\nice-select.css" />
+    <Content Include="UserTemplate\css\owl.carousel.css" />
+    <Content Include="UserTemplate\fonts\fontawesome-webfont.svg" />
+    <Content Include="UserTemplate\fonts\Linearicons-Free.svg" />
+    <Content Include="UserTemplate\img\about-img.jpg" />
+    <Content Include="UserTemplate\img\about\info-img.jpg" />
+    <Content Include="UserTemplate\img\b1.jpg" />
+    <Content Include="UserTemplate\img\b2.jpg" />
+    <Content Include="UserTemplate\img\b3.jpg" />
+    <Content Include="UserTemplate\img\blog\ads-banner.jpg" />
+    <Content Include="UserTemplate\img\blog\blog-home-banner.jpg" />
+    <Content Include="UserTemplate\img\blog\c1.jpg" />
+    <Content Include="UserTemplate\img\blog\c2.jpg" />
+    <Content Include="UserTemplate\img\blog\c3.jpg" />
+    <Content Include="UserTemplate\img\blog\c4.jpg" />
+    <Content Include="UserTemplate\img\blog\c5.jpg" />
+    <Content Include="UserTemplate\img\blog\c6.jpg" />
+    <Content Include="UserTemplate\img\blog\cat-widget1.jpg" />
+    <Content Include="UserTemplate\img\blog\cat-widget2.jpg" />
+    <Content Include="UserTemplate\img\blog\cat-widget3.jpg" />
+    <Content Include="UserTemplate\img\blog\feature-img1.jpg" />
+    <Content Include="UserTemplate\img\blog\feature-img2.jpg" />
+    <Content Include="UserTemplate\img\blog\feature-img3.jpg" />
+    <Content Include="UserTemplate\img\blog\feature-img4.jpg" />
+    <Content Include="UserTemplate\img\blog\feature-img5.jpg" />
+    <Content Include="UserTemplate\img\blog\next.jpg" />
+    <Content Include="UserTemplate\img\blog\post-img1.jpg" />
+    <Content Include="UserTemplate\img\blog\post-img2.jpg" />
+    <Content Include="UserTemplate\img\blog\pp1.jpg" />
+    <Content Include="UserTemplate\img\blog\pp2.jpg" />
+    <Content Include="UserTemplate\img\blog\pp3.jpg" />
+    <Content Include="UserTemplate\img\blog\pp4.jpg" />
+    <Content Include="UserTemplate\img\blog\prev.jpg" />
+    <Content Include="UserTemplate\img\blog\s-img.jpg" />
+    <Content Include="UserTemplate\img\blog\user-info.png" />
+    <Content Include="UserTemplate\img\d1.jpg" />
+    <Content Include="UserTemplate\img\d2.jpg" />
+    <Content Include="UserTemplate\img\d3.jpg" />
+    <Content Include="UserTemplate\img\elements\a.jpg" />
+    <Content Include="UserTemplate\img\elements\a2.jpg" />
+    <Content Include="UserTemplate\img\elements\d.jpg" />
+    <Content Include="UserTemplate\img\elements\disabled-check.png" />
+    <Content Include="UserTemplate\img\elements\disabled-radio.png" />
+    <Content Include="UserTemplate\img\elements\f1.jpg" />
+    <Content Include="UserTemplate\img\elements\f2.jpg" />
+    <Content Include="UserTemplate\img\elements\f3.jpg" />
+    <Content Include="UserTemplate\img\elements\f4.jpg" />
+    <Content Include="UserTemplate\img\elements\f5.jpg" />
+    <Content Include="UserTemplate\img\elements\f6.jpg" />
+    <Content Include="UserTemplate\img\elements\f7.jpg" />
+    <Content Include="UserTemplate\img\elements\f8.jpg" />
+    <Content Include="UserTemplate\img\elements\g1.jpg" />
+    <Content Include="UserTemplate\img\elements\g2.jpg" />
+    <Content Include="UserTemplate\img\elements\g3.jpg" />
+    <Content Include="UserTemplate\img\elements\g4.jpg" />
+    <Content Include="UserTemplate\img\elements\g5.jpg" />
+    <Content Include="UserTemplate\img\elements\g6.jpg" />
+    <Content Include="UserTemplate\img\elements\g7.jpg" />
+    <Content Include="UserTemplate\img\elements\g8.jpg" />
+    <Content Include="UserTemplate\img\elements\primary-check.png" />
+    <Content Include="UserTemplate\img\elements\primary-radio.png" />
+    <Content Include="UserTemplate\img\elements\success-check.png" />
+    <Content Include="UserTemplate\img\elements\success-radio.png" />
+    <Content Include="UserTemplate\img\elements\user1.png" />
+    <Content Include="UserTemplate\img\elements\user2.png" />
+    <Content Include="UserTemplate\img\hero-bg.jpg" />
+    <Content Include="UserTemplate\img\hotels\about-img.jpg" />
+    <Content Include="UserTemplate\img\hotels\d1.jpg" />
+    <Content Include="UserTemplate\img\hotels\d2.jpg" />
+    <Content Include="UserTemplate\img\hotels\d3.jpg" />
+    <Content Include="UserTemplate\img\hotels\d4.jpg" />
+    <Content Include="UserTemplate\img\hotels\d5.jpg" />
+    <Content Include="UserTemplate\img\hotels\d6.jpg" />
+    <Content Include="UserTemplate\img\i1.jpg" />
+    <Content Include="UserTemplate\img\i2.jpg" />
+    <Content Include="UserTemplate\img\i3.jpg" />
+    <Content Include="UserTemplate\img\i4.jpg" />
+    <Content Include="UserTemplate\img\i5.jpg" />
+    <Content Include="UserTemplate\img\i6.jpg" />
+    <Content Include="UserTemplate\img\i7.jpg" />
+    <Content Include="UserTemplate\img\i8.jpg" />
+    <Content Include="UserTemplate\img\insurence\bullet.png" />
+    <Content Include="UserTemplate\img\insurence\i1.jpg" />
+    <Content Include="UserTemplate\img\insurence\i2.jpg" />
+    <Content Include="UserTemplate\img\logo.png" />
+    <Content Include="UserTemplate\img\logof.png" />
+    <Content Include="UserTemplate\img\o1.jpg" />
+    <Content Include="UserTemplate\img\o2.jpg" />
+    <Content Include="UserTemplate\img\o3.jpg" />
+    <Content Include="UserTemplate\img\o4.jpg" />
+    <Content Include="UserTemplate\img\packages\about-img.jpg" />
+    <Content Include="UserTemplate\img\packages\d1.jpg" />
+    <Content Include="UserTemplate\img\packages\d2.jpg" />
+    <Content Include="UserTemplate\img\packages\d3.jpg" />
+    <Content Include="UserTemplate\img\packages\d4.jpg" />
+    <Content Include="UserTemplate\img\packages\d5.jpg" />
+    <Content Include="UserTemplate\img\packages\d6.jpg" />
+    <Content Include="UserTemplate\img\packages\hot-deal.jpg" />
+    <Content Include="UserTemplate\img\price-bg.png" />
+    <Content Include="UserTemplate\img\top-banner.jpg" />
+    <Content Include="UserTemplate\img\ui-icons_444444_256x240.png" />
+    <Content Include="UserTemplate\js\easing.min.js" />
+    <Content Include="UserTemplate\js\hoverIntent.js" />
+    <Content Include="UserTemplate\js\jquery-ui.js" />
+    <Content Include="UserTemplate\js\jquery.ajaxchimp.min.js" />
+    <Content Include="UserTemplate\js\jquery.magnific-popup.min.js" />
+    <Content Include="UserTemplate\js\jquery.nice-select.min.js" />
+    <Content Include="UserTemplate\js\mail-script.js" />
+    <Content Include="UserTemplate\js\main.js" />
+    <Content Include="UserTemplate\js\owl.carousel.min.js" />
+    <Content Include="UserTemplate\js\popper.min.js" />
+    <Content Include="UserTemplate\js\superfish.min.js" />
+    <Content Include="UserTemplate\js\vendor\bootstrap.min.js" />
+    <Content Include="UserTemplate\js\vendor\jquery-2.2.4.min.js" />
+    <Content Include="User\About1.aspx" />
+    <Content Include="User\Contact.aspx" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="User\Hotels.aspx" />
+    <Content Include="User\Hotels1.aspx" />
+    <Content Include="User\Login.aspx" />
+    <Content Include="User\Packages.aspx" />
+    <Content Include="User\Packages1.aspx" />
+    <Content Include="User\About.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\About1.aspx.cs">
+      <DependentUpon>About1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\About1.aspx.designer.cs">
+      <DependentUpon>About1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Hotels.aspx.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Hotels.aspx.designer.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Hotels1.aspx.cs">
+      <DependentUpon>Hotels1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Hotels1.aspx.designer.cs">
+      <DependentUpon>Hotels1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Packages.aspx.cs">
+      <DependentUpon>Packages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Packages.aspx.designer.cs">
+      <DependentUpon>Packages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Packages1.aspx.cs">
+      <DependentUpon>Packages1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Packages1.aspx.designer.cs">
+      <DependentUpon>Packages1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="User\User.Master" />
+    <Content Include="UserTemplate\css\bootstrap.map" />
+    <Content Include="UserTemplate\css\main.map" />
+    <Content Include="UserTemplate\fonts\fontawesome-webfont.eot" />
+    <Content Include="UserTemplate\fonts\fontawesome-webfont.ttf" />
+    <Content Include="UserTemplate\fonts\fontawesome-webfont.woff" />
+    <Content Include="UserTemplate\fonts\fontawesome-webfont.woff2" />
+    <Content Include="UserTemplate\fonts\FontAwesome.otf" />
+    <Content Include="UserTemplate\fonts\Linearicons-Free.eot" />
+    <Content Include="UserTemplate\fonts\Linearicons-Free.ttf" />
+    <Content Include="UserTemplate\fonts\Linearicons-Free.woff" />
+    <Content Include="UserTemplate\fonts\Linearicons-Free.woff2" />
+    <Content Include="UserTemplate\img\.DS_Store" />
+    <Content Include="UserTemplate\img\blog\.DS_Store" />
+    <Content Include="UserTemplate\img\elements\.DS_Store" />
+    <Content Include="UserTemplate\scss\.DS_Store" />
+    <Content Include="UserTemplate\scss\bootstrap.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\.DS_Store" />
+    <Content Include="UserTemplate\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\bootstrap.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_navbar-align.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_alert.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_badge.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_button-group.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_buttons.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_card.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_carousel.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_close.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_code.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_dropdown.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_forms.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_functions.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_grid.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_images.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_input-group.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_list-group.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_media.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_mixins.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_modal.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_nav.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_navbar.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_pagination.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_popover.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_print.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_progress.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_reboot.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_root.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_tables.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_tooltip.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_transitions.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_type.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_utilities.scss" />
+    <Content Include="UserTemplate\scss\bootstrap\_variables.scss" />
+    <Content Include="UserTemplate\scss\main.scss" />
+    <Content Include="UserTemplate\scss\theme\.DS_Store" />
+    <Content Include="UserTemplate\scss\theme\_about.scss" />
+    <Content Include="UserTemplate\scss\theme\_blog.scss" />
+    <Content Include="UserTemplate\scss\theme\_contact.scss" />
+    <Content Include="UserTemplate\scss\theme\_elements.scss" />
+    <Content Include="UserTemplate\scss\theme\_flexbox.scss" />
+    <Content Include="UserTemplate\scss\theme\_footer.scss" />
+    <Content Include="UserTemplate\scss\theme\_header.scss" />
+    <Content Include="UserTemplate\scss\theme\_home.scss" />
+    <Content Include="UserTemplate\scss\theme\_insurence.scss" />
+    <Content Include="UserTemplate\scss\theme\_mixins.scss" />
+    <Content Include="UserTemplate\scss\theme\_packages.scss" />
+    <Content Include="UserTemplate\scss\theme\_reset.scss" />
+    <Content Include="UserTemplate\scss\theme\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50545</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50545/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
